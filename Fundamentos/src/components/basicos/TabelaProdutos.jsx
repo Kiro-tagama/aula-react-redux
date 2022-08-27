@@ -5,15 +5,15 @@ export default ()=>{
     {id:3,nome:'produto-3',preco:'30,00'},
   ]
   return(
-    <table align="center" border={1}  >
+    <table align="center" className='tabelaProdutos' >
       <tr>
         <th>id</th>
         <th>nome</th>
         <th>preço</th>
       </tr>
-      {produtos.map((data)=>{
+      {produtos.map((data, i)=>{
         return(
-          <tr>
+          <tr key={data.id} className={i % 2 == 1? 'par' : null}>
             <td>{data.id}</td>
             <td>{data.nome}</td>
             <td>{data.preco}</td>
