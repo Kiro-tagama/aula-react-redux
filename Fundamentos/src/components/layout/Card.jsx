@@ -2,9 +2,11 @@
 export default function(props){
   return(
     <div className="card">
-      <h2>{props.title}</h2>
+      <h3
+      style={{color:'#eee',textAlign:'center',marginBlock:10}}
+      >{props.titulo}</h3>
       <div>
-        {Children}
+        {props.children}
       </div>
     </div>
   )
