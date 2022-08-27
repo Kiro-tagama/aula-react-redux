@@ -9,6 +9,7 @@ import RandomNumber from './components/basicos/RandomNumber.jsx'
 import Familia from './components/basicos/Familia.jsx'
 import Filho from './components/basicos/Filho.jsx'
 import TabelaProdutos from './components/basicos/TabelaProdutos.jsx'
+import Condicional from './components/basicos/Condicional.jsx'
 
 
 export default function App() {
@@ -18,6 +19,13 @@ export default function App() {
       <h1 style={{textAlign:'center'}}>Fundamentos</h1>
 
       <div className='areaCards'>
+        <Card titulo='Renderização condicional'>
+          {/* <Condicional isPar={11}/> */}
+          {/* video 32 */}
+          <Condicional nome='rodrigo'/>
+          <Condicional email='ro@gmail.com'/>
+          <Condicional/>
+        </Card>
         <Card titulo='repetição (map)'>
           <TabelaProdutos/>
         </Card>
