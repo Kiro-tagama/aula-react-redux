@@ -1,7 +1,5 @@
-# aula-redux
+# Udemy - Cod3er
 
-### Udemy - Cod3er
-
-ReactJS | Redux
+### ReactJS | Redux
 
 - Funamentos - ReactJS
