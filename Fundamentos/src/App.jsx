@@ -11,6 +11,9 @@ import Filho from './components/basicos/Filho.jsx'
 import TabelaProdutos from './components/basicos/TabelaProdutos.jsx'
 import Condicional from './components/basicos/Condicional.jsx'
 
+import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+
 
 export default function App() {
 
@@ -19,6 +22,12 @@ export default function App() {
       <h1 style={{textAlign:'center'}}>Fundamentos</h1>
 
       <div className='areaCards'>
+        <Card titulo='Comunicação indireta'>
+          <IndiretaPai/>
+        </Card>
+        <Card titulo='Comunicação direta'>
+          <DiretaPai/>
+        </Card>
         <Card titulo='Renderização condicional'>
           {/* <Condicional isPar={11}/> */}
           {/* video 32 */}
@@ -36,7 +45,7 @@ export default function App() {
           </Familia>
         </Card>
         <Card titulo='Numero aleatório'>
-          <RandomNumber min={0} max={100}/>
+          <RandomNumber min={0} max={20}/>
         </Card>
         <Card titulo='Fragmento'>
           <Fragmento/>

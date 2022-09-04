@@ -1,6 +1,6 @@
 export default function Filho(props) {
   return (
-    <p>
+    <p key={props.i}>
       {props.nome} {props.snome}
     </p>
   );

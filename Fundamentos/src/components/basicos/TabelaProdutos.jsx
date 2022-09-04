@@ -6,18 +6,22 @@ export default ()=>{
   ]
   return(
     <table align="center" className='tabelaProdutos' >
-      <tr>
+      <thead>
+        <tr>
         <th>id</th>
         <th>nome</th>
         <th>preço</th>
-      </tr>
+        </tr>
+      </thead>
       {produtos.map((data, i)=>{
         return(
-          <tr key={data.id} className={i % 2 == 1? 'par' : null}>
+          <tbody key={data.id} className={i % 2 == 1? 'par' : null}>
+            <tr>
             <td>{data.id}</td>
             <td>{data.nome}</td>
             <td>{data.preco}</td>
-          </tr>
+            </tr>
+          </tbody>
         )
       })}
     </table>

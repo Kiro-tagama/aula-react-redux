@@ -5,7 +5,7 @@ export default function(props){
       <h3
       style={{color:'#eee',textAlign:'center',marginBlock:10}}
       >{props.titulo}</h3>
-      <div>
+      <div className="cardDiv">
         {props.children}
       </div>
     </div>
