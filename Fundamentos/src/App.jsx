@@ -2,6 +2,8 @@ import './App.css'
 
 import Card from './components/layout/Card.jsx'
 
+import Input from './components/formulario/Input'
+
 import Primeiro from './components/basicos/Primeiro.jsx'
 import ComParametro from './components/basicos/ComParametro.jsx'
 import Fragmento from './components/basicos/Fragmento.jsx'
@@ -22,6 +24,9 @@ export default function App() {
       <h1 style={{textAlign:'center'}}>Fundamentos</h1>
 
       <div className='areaCards'>
+        <Card titulo='Controlando (Input)'>
+          <Input></Input>
+        </Card>
         <Card titulo='Comunicação indireta'>
           <IndiretaPai/>
         </Card>

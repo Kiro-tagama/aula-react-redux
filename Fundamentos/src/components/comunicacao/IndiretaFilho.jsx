@@ -1,7 +1,11 @@
-export default ()=>{
+export default (props)=>{
   return(
     <div>
-      fihlo ...
+      filho
+      <br />
+      <button onClick={_=>props.quandoClicar("joão",20,true)}>
+        Fornecer Informações
+      </button>
     </div>
   )
 }
