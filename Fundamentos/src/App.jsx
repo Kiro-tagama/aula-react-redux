@@ -16,6 +16,10 @@ import Condicional from './components/basicos/Condicional.jsx'
 import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 
+import Contador from './components/contador/Contador'
+import Mega from './components/contador/Mega.jsx'
+
+
 
 export default function App() {
 
@@ -24,6 +28,12 @@ export default function App() {
       <h1 style={{textAlign:'center'}}>Fundamentos</h1>
 
       <div className='areaCards'>
+        <Card titulo='numeros da sorte (Array)'>
+          <Mega/>
+        </Card>
+        <Card titulo='Contador'>
+          <Contador numeroInicial={10}/>
+        </Card>
         <Card titulo='Controlando (Input)'>
           <Input></Input>
         </Card>
