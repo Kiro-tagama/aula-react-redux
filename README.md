@@ -3,3 +3,5 @@
 ### ReactJS | Redux
 
 - Funamentos - ReactJS
+- Calculadora - ReactJS
+- Navegacao - ReactJS
