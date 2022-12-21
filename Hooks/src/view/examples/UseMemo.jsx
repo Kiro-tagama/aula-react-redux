@@ -21,6 +21,7 @@ const UseMemo = (props) => {
 
     /*
         useEffect e useMeno são semelhantes
+        useMemo retorna um valor em cache
     */ 
 
     return (
